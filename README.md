@@ -31,7 +31,17 @@
 
 ## 📂 ポートフォリオ一覧
 
-### 1. 顧客管理＆請求書発行システム（GAS）🏢
+> 💡 **各システムのタイトルをクリックすると、詳細ページ（README・画面構成・技術詳細）が開きます**
+
+---
+
+### 🏢 [1. 顧客管理＆請求書発行システム（GAS）](https://github.com/usako-ui/customer-management-invoice-system-portfolio)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://github.com/usako-ui/customer-management-invoice-system-portfolio)**
+
+</div>
 
 > 個人・小規模事業者向けに、顧客情報管理から請求書発行・保存までを一元化した業務基盤システム
 
@@ -47,14 +57,23 @@
 - 支払状況管理
 
 **技術スタック**  
-Google Apps Script / JavaScript / HTML / CSS
+`Google Apps Script` `JavaScript` `HTML` `CSS`
 
-**詳細はこちら**  
-[📄 README・画面構成・運用イメージを見る](https://github.com/usako-ui/customer-management-invoice-system-portfolio)
+<div align="center">
+
+**[📄 詳細なREADME・画面構成・運用イメージを見る →](https://github.com/usako-ui/customer-management-invoice-system-portfolio)**
+
+</div>
 
 ---
 
-### 2. Googleカレンダー自動日程調整（GAS）📅
+### 📅 [2. Googleカレンダー自動日程調整（GAS）](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)**
+
+</div>
 
 > 個人事業主の実運用をヒアリングし、日程調整の往復連絡を不要にした予約自動化システム
 
@@ -70,14 +89,23 @@ Google Apps Script / JavaScript / HTML / CSS
 - リマインダー機能
 
 **技術スタック**  
-Google Apps Script / Google Calendar API
+`Google Apps Script` `Google Calendar API`
 
-**詳細はこちら**  
-[📄 README・画面設計・システム構成を見る](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)
+<div align="center">
+
+**[📄 詳細なREADME・画面設計・システム構成を見る →](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)**
+
+</div>
 
 ---
 
-### 3. くらしログ（GAS）🏠
+### 🏠 [3. くらしログ（GAS）](https://github.com/usako-ui/kurashi-log-portfolio)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://github.com/usako-ui/kurashi-log-portfolio)**
+
+</div>
 
 > 日常の記録を無理なく継続できるよう設計した、個人向けの生活ログ管理システム
 
@@ -93,14 +121,23 @@ Google Apps Script / Google Calendar API
 - 月次・年次レポート
 
 **技術スタック**  
-Google Apps Script / Google Spreadsheet
+`Google Apps Script` `Google Spreadsheet` `Chart.js`
 
-**詳細はこちら**  
-[📄 README・画面設計・運用イメージを見る](https://github.com/usako-ui/kurashi-log-portfolio)
+<div align="center">
+
+**[📄 詳細なREADME・画面設計・運用イメージを見る →](https://github.com/usako-ui/kurashi-log-portfolio)**
+
+</div>
 
 ---
 
-### 4. 小規模飲食店向け 在庫管理システム（React + Supabase）🍔
+### 🍔 [4. 小規模飲食店向け 在庫管理システム（React + Supabase）](https://github.com/usako-ui/inventory-management-portfolio)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://github.com/usako-ui/inventory-management-portfolio)**
+
+</div>
 
 > 現場の業務フローを想定しながら、在庫・仕入・売上・廃棄を一元管理するシステム
 
@@ -116,10 +153,13 @@ Google Apps Script / Google Spreadsheet
 - 在庫アラート機能
 
 **技術スタック**  
-React / Supabase / JavaScript
+`React` `TypeScript` `Supabase` `Tailwind CSS`
 
-**詳細はこちら**  
-[📄 README・画面設計・運用フローを見る](https://github.com/usako-ui/inventory-management-portfolio)
+<div align="center">
+
+**[📄 詳細なREADME・画面設計・運用フローを見る →](https://github.com/usako-ui/inventory-management-portfolio)**
+
+</div>
 
 ---
 
@@ -282,9 +322,9 @@ HTML/CSS ⭐⭐⭐
 
 #### またはクラウドソーシングサイトから
 
-- [ランサーズ](https://www.lancers.jp/profile/Mi1103)
-- [クラウドワークス](https://crowdworks.jp/public/employees/6463085?ref=share_url_wkprofile)
-- [ココナラ](https://coconala.com/users/5336527)
+[ランサーズ](https://www.lancers.jp/profile/Mi1103)
+[クラウドワークス](https://crowdworks.jp/public/employees/6463085?ref=share_url_wkprofile)
+[ココナラ](https://coconala.com/users/5336527)
 
 ---
 
