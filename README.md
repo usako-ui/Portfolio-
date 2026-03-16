@@ -17,6 +17,7 @@
 
 ---
 
+
 ## 🎯 開発スタンス
 
 **「技術で課題を解決し、日々の業務を楽にする」**
@@ -158,6 +159,39 @@
 <div align="center">
 
 **[📄 詳細なREADME・画面設計・運用フローを見る →](https://github.com/usako-ui/inventory-management-portfolio)**
+
+</div>
+
+---
+
+### 📝 [5. 英単語テスト自動作成ツール（Excel VBA）](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)**
+
+</div>
+
+> 英語塾や学校での小テスト作成を効率化する、Excel VBAによるテスト自動生成ツール
+
+**課題解決のポイント**
+- 英単語テストを毎回手作業で作成する負担を削減
+- 単語リストから問題・解答シートを自動生成
+- 出題順のランダム化により、複数パターンのテスト作成が可能
+
+**主な機能**
+- 英語 → 日本語テスト作成
+- 日本語 → 英語テスト作成
+- 出題範囲指定
+- ランダム出題機能
+- 問題シート・解答シート自動生成
+
+**技術スタック**  
+`Excel VBA` `Microsoft Excel`
+
+<div align="center">
+
+**[📄 詳細なREADME・画面イメージ・ツール概要を見る →](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)**
 
 </div>
 
