@@ -164,11 +164,11 @@
 
 ---
 
-### 📝 [5. 英単語テスト自動作成ツール（Excel VBA）](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)
+### 📝 [5. 英単語テスト自動作成ツール（Excel VBA）](https://usako-ui.github.io/Portfolio-/projects/VBA_English-vocabulary-test-generat/)
 
 <div align="center">
 
-**[👉 詳細ページを見る](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/VBA_English-vocabulary-test-generat/)**
 
 </div>
 
@@ -191,7 +191,7 @@
 
 <div align="center">
 
-**[📄 詳細なREADME・画面イメージ・ツール概要を見る →](https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio)**
+**[📄 詳細なREADME・画面イメージ・ツール概要を見る →](https://usako-ui.github.io/Portfolio-/projects/VBA_English-vocabulary-test-generat/)**
 
 </div>
 
