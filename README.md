@@ -196,6 +196,42 @@
 </div>
 
 ---
+ 
+### 💅 [6. ネイルサロン統合管理ツール（GAS × スプレッドシート）](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)
+ 
+<div align="center">
+ 
+**[👉 詳細ページを見る](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)**
+ 
+</div>
+ 
+> SALON BOARDのCSVを貼るだけで、スタッフ実績・在庫・顧客データを自動集計する統合管理ツール
+ 
+**課題解決のポイント**
+ 
+- スタッフ別実績（指名・自顧客・次回予約率など）の月次手集計を自動化
+- フリガナ＋電話下4桁による「擬似顧客キー」で、顧客IDがなくてもリピート率を正確に把握
+- スマホから在庫入力 → 現在庫・発注アラートを自動計算
+ 
+**主な機能**
+ 
+- CSVインポート＆自動パース（SALON BOARD対応）
+- スタッフ別個人実績表の自動生成（行の色分けでKPIを可視化）
+- 顧客名寄せ＆マスタ自動生成（要確認フラグつき）
+- 在庫ログ管理＆現在庫の自動計算
+- 発注候補アラート（下限割れを自動検知）
+ 
+**技術スタック**
+ 
+`Google Apps Script` `Google スプレッドシート` `JavaScript` `SALON BOARD CSV連携`
+ 
+<div align="center">
+ 
+**[📄 詳細なREADME・画面構成を見る →](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)**
+ 
+</div>
+ 
+---
 
 ## 👤 開発者について
 
@@ -374,5 +410,5 @@ HTML/CSS ⭐⭐⭐
 
 ---
 
-*最終更新日: 2026年2月*  
+*最終更新日: 2026年4月*  
 *ポートフォリオ バージョン: v1.0*
