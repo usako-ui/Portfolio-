@@ -2,14 +2,16 @@
 
 <div align="center">
 
-**学習塾の先生が、ボタン一つで英単語テストを自動生成**
+<p><strong>学習塾の先生が、ボタン一つで英単語テストを自動生成</strong></p>
 
-![Excel](https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
-![VBA](https://img.shields.io/badge/VBA-217346?style=flat&logo=microsoft&logoColor=white)
+<p>
+<img src="https://img.shields.io/badge/Excel-217346?style=flat&logo=microsoft-excel&logoColor=white">
+<img src="https://img.shields.io/badge/VBA-217346?style=flat&logo=microsoft&logoColor=white">
+</p>
 
-**テスト作成時間を90%削減し、教材準備の負担を大幅軽減**
+<p><strong>テスト作成時間を90%削減し、教材準備の負担を大幅軽減</strong></p>
 
-> **注意**: このリポジトリはポートフォリオ用です。ソースコードは非公開です。
+<p>注意: このリポジトリはポートフォリオ用です。ソースコードは非公開です。</p>
 
 </div>
 
