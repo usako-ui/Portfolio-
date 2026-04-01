@@ -627,21 +627,23 @@ Google Workspace とExcel VBAを中心とした
 
 <div align="center">
 
-**学習塾の先生が、ボタン一つで英単語テストを自動生成**
+<p><strong>学習塾の先生が、ボタン一つで英単語テストを自動生成</strong></p>
 
----
+<hr>
 
-**制作者**: [Misako]  
-**制作時期**: 2026年3月  
-**開発言語**: VBA (Visual Basic for Applications)  
-**プラットフォーム**: Microsoft Excel
+<p>
+<strong>制作者</strong>: Misako<br>
+<strong>制作時期</strong>: 2026年3月<br>
+<strong>開発言語</strong>: VBA (Visual Basic for Applications)<br>
+<strong>プラットフォーム</strong>: Microsoft Excel
+</p>
 
----
+<hr>
 
-📢 シェア・拡散も大歓迎です
+<p>📢 シェア・拡散も大歓迎です</p>
 
----
+<hr>
 
-*最終更新日: 2026年2月*
+<p><em>最終更新日: 2026年2月</em></p>
 
 </div>
