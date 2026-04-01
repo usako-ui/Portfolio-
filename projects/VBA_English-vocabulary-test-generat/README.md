@@ -644,6 +644,6 @@ Google Workspace とExcel VBAを中心とした
 
 <hr>
 
-<p><em>最終更新日: 2026年2月</em></p>
+<p><em>最終更新日: 2026年3月</em></p>
 
 </div>
