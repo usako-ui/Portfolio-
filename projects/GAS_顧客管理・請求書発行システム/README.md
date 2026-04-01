@@ -141,23 +141,23 @@
 ## 📸 画面イメージ
 
 ### ログイン画面
-![ログイン画面](./screenshots/login.png)
+![ログイン画面](./docs/images/login.png)
 *セキュリティ対策としてパスワード認証を実装*
 
 ### 顧客管理画面（トップページ）
-![顧客管理画面](./screenshots/customer_list.png)
+![顧客管理画面](./docs/images/customer_list.png)
 *顧客情報の登録・検索・一覧表示*
 
 ### 顧客詳細画面
-![顧客詳細画面](./screenshots/customer_detail.png)
+![顧客詳細画面](./docs/images/customer_detail.png)
 *見やすい画面で顧客情報を確認・編集*
 
 ### 請求書作成画面
-![請求書作成画面](./screenshots/invoice_create.png)
+![請求書作成画面](./docs/images/invoice_create.png)
 *明細入力から自動PDF化まで一画面で完結*
 
 ### 請求書一覧画面
-![請求書一覧画面](./screenshots/invoice_list.png)
+![請求書一覧画面](./docs/images/invoice_list.png)
 *発行済み請求書の管理・支払状況の確認*
 
 ---
