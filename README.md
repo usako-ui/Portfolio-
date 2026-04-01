@@ -104,7 +104,7 @@
 
 <div align="center">
 
-**[👉 詳細ページを見る](https://github.com/usako-ui/kurashi-log-portfolio)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/GAS_くらしログ/)**
 
 </div>
 
@@ -126,7 +126,7 @@
 
 <div align="center">
 
-**[📄 詳細なREADME・画面設計・運用イメージを見る →](https://github.com/usako-ui/kurashi-log-portfolio)**
+**[📄 詳細なREADME・画面設計・運用イメージを見る →](https://usako-ui.github.io/Portfolio-/projects/GAS_くらしログ/)**
 
 </div>
 
