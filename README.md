@@ -197,11 +197,11 @@
 
 ---
  
-### 💅 [6. ネイルサロン統合管理ツール（GAS × スプレッドシート）](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)
+### 💅 [6. ネイルサロン統合管理ツール（GAS × スプレッドシート）](https://usako-ui.github.io/Portfolio-/projects/GAS_Salon-Board-Plus-management/)
  
 <div align="center">
  
-**[👉 詳細ページを見る](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/GAS_Salon-Board-Plus-management/)**
  
 </div>
  
@@ -227,7 +227,7 @@
  
 <div align="center">
  
-**[📄 詳細なREADME・画面構成を見る →](https://github.com/usako-ui/GAS_Salon-Board-Plus-management-portfolio)**
+**[📄 詳細なREADME・画面構成を見る →](https://usako-ui.github.io/Portfolio-/projects/GAS_Salon-Board-Plus-management/)**
  
 </div>
  
