@@ -1,179 +1,1098 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio 目次集</title>
-<style>
-  body { font-family: sans-serif; max-width: 900px; margin: 2rem auto; line-height: 1.6; color: #333; }
-  h1 { text-align: center; color: #2c3e50; margin-bottom: 2rem; }
-  h2 { color: #34495e; border-bottom: 1px solid #ccc; padding-bottom: 0.3rem; margin-top: 2rem; }
-  h3 { color: #2c3e50; margin-top: 1.5rem; }
-  blockquote { border-left: 4px solid #ccc; padding-left: 1rem; color: #555; margin: 1rem 0; }
-  ul { list-style-type: disc; margin-left: 2rem; }
-  a { text-decoration: none; color: #3498db; }
-  a:hover { text-decoration: underline; }
-  table { border-collapse: collapse; margin: 1rem 0; width: 100%; }
-  table, th, td { border: 1px solid #ccc; }
-  th, td { padding: 0.5rem; text-align: left; }
-  hr { border: none; border-top: 1px solid #ccc; margin: 2rem 0; }
-  .center { text-align: center; margin: 1rem 0; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Misako | GAS・業務自動化・Webアプリ開発のポートフォリオ。小規模事業者の課題解決に特化した業務効率化ツールを開発しています。">
+  <title>Misako | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       CSS Variables
+    ============================================================ */
+    :root {
+      --clr-bg:         #f7f8fc;
+      --clr-surface:    #ffffff;
+      --clr-border:     #e8eaf0;
+      --clr-text:       #1a1d2e;
+      --clr-muted:      #6b7080;
+      --clr-accent:     #4361ee;
+      --clr-accent-lt:  #eef1fd;
+
+      /* カテゴリカラー */
+      --clr-automation: #4361ee;
+      --clr-automation-lt: #eef1fd;
+      --clr-web:        #0ea5e9;
+      --clr-web-lt:     #e0f5ff;
+      --clr-integration:#7c3aed;
+      --clr-integration-lt: #f3effe;
+      --clr-prototype:  #059669;
+      --clr-prototype-lt: #e6f7f2;
+      --clr-future:     #94a3b8;
+      --clr-future-lt:  #f1f5f9;
+
+      --radius-card: 16px;
+      --radius-tag:  6px;
+      --shadow-card: 0 2px 16px rgba(67,97,238,0.07);
+      --shadow-hover: 0 8px 32px rgba(67,97,238,0.14);
+      --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ============================================================
+       Reset & Base
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ============================================================
+       Layout
+    ============================================================ */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================================
+       Header / Hero
+    ============================================================ */
+    .site-header {
+      background: var(--clr-surface);
+      border-bottom: 1px solid var(--clr-border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .site-logo {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--clr-accent);
+      letter-spacing: -0.02em;
+    }
+    .site-nav {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .site-nav a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--clr-muted);
+      transition: color var(--transition);
+    }
+    .site-nav a:hover { color: var(--clr-accent); }
+
+    .hero {
+      padding: 72px 0 56px;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      background: var(--clr-accent-lt);
+      padding: 4px 14px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      color: var(--clr-text);
+      margin-bottom: 16px;
+    }
+    .hero-title span { color: var(--clr-accent); }
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--clr-muted);
+      max-width: 480px;
+      margin: 0 auto 36px;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .hero-badge {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--clr-muted);
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      padding: 6px 14px;
+      border-radius: 99px;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 10px;
+      transition: all var(--transition);
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--clr-accent);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      background: #3451d1;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(67,97,238,0.3);
+    }
+    .btn-secondary {
+      background: var(--clr-surface);
+      color: var(--clr-text);
+      border: 1px solid var(--clr-border);
+    }
+    .btn-secondary:hover {
+      border-color: var(--clr-accent);
+      color: var(--clr-accent);
+      transform: translateY(-1px);
+    }
+
+    /* ============================================================
+       Filter Tabs
+    ============================================================ */
+    .filter-section {
+      padding: 0 0 32px;
+    }
+    .filter-section .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .filter-label {
+      font-size: 0.8rem;
+      color: var(--clr-muted);
+      font-weight: 500;
+    }
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .filter-tab {
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 18px;
+      border-radius: 99px;
+      border: 1.5px solid var(--clr-border);
+      background: var(--clr-surface);
+      color: var(--clr-muted);
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    .filter-tab:hover,
+    .filter-tab.active {
+      background: var(--clr-accent);
+      border-color: var(--clr-accent);
+      color: #fff;
+    }
+
+    /* ============================================================
+       Portfolio Grid
+    ============================================================ */
+    .portfolio-section { padding: 0 0 80px; }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .portfolio-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-card);
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      box-shadow: var(--shadow-card);
+      transition: all var(--transition);
+    }
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(67,97,238,0.2);
+    }
+    .portfolio-card.hidden { display: none; }
+
+    /* Card Header */
+    .card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .card-icon {
+      font-size: 2rem;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--clr-bg);
+      border-radius: 12px;
+    }
+    .card-title-area {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;
+    }
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--clr-text);
+    }
+    .card-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 3px 10px;
+      border-radius: 99px;
+      width: fit-content;
+    }
+
+    /* Badge variants */
+    .badge-automation {
+      background: var(--clr-automation-lt);
+      color: var(--clr-automation);
+    }
+    .badge-web {
+      background: var(--clr-web-lt);
+      color: var(--clr-web);
+    }
+    .badge-integration {
+      background: var(--clr-integration-lt);
+      color: var(--clr-integration);
+    }
+    .badge-prototype {
+      background: var(--clr-prototype-lt);
+      color: var(--clr-prototype);
+    }
+    .badge-future {
+      background: var(--clr-future-lt);
+      color: var(--clr-future);
+    }
+
+    /* Card Description */
+    .card-description {
+      font-size: 0.87rem;
+      color: var(--clr-muted);
+      line-height: 1.65;
+    }
+
+    /* Card Points */
+    .card-points {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .point-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--clr-text);
+      line-height: 1.55;
+    }
+    .point-icon {
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* Card Tech */
+    .card-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+    }
+    .tech-tag {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--clr-muted);
+      background: var(--clr-bg);
+      border: 1px solid var(--clr-border);
+      padding: 4px 10px;
+      border-radius: var(--radius-tag);
+    }
+
+    /* Card Footer */
+    .card-footer {
+      display: flex;
+      gap: 10px;
+      padding-top: 4px;
+      border-top: 1px solid var(--clr-border);
+    }
+    .card-link {
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-link-primary {
+      background: var(--clr-accent);
+      color: #fff;
+      flex: 1;
+      justify-content: center;
+    }
+    .card-link-primary:hover {
+      background: #3451d1;
+    }
+    .card-link-secondary {
+      background: var(--clr-bg);
+      color: var(--clr-muted);
+      border: 1px solid var(--clr-border);
+    }
+    .card-link-secondary:hover {
+      color: var(--clr-accent);
+      border-color: var(--clr-accent);
+    }
+
+    /* ============================================================
+       About Section
+    ============================================================ */
+    .about-section {
+      background: var(--clr-surface);
+      border-top: 1px solid var(--clr-border);
+      border-bottom: 1px solid var(--clr-border);
+      padding: 64px 0;
+      margin-bottom: 64px;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--clr-text);
+      letter-spacing: -0.02em;
+      margin-bottom: 32px;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .about-text p {
+      font-size: 0.93rem;
+      color: var(--clr-muted);
+      margin-bottom: 14px;
+      line-height: 1.8;
+    }
+    .about-principles {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .principle-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      background: var(--clr-bg);
+      border-radius: 10px;
+      border: 1px solid var(--clr-border);
+    }
+    .principle-num {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--clr-accent);
+      flex-shrink: 0;
+      min-width: 24px;
+    }
+    .principle-body strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .principle-body span {
+      font-size: 0.82rem;
+      color: var(--clr-muted);
+    }
+
+    /* ============================================================
+       Contact Section
+    ============================================================ */
+    .contact-section {
+      padding: 0 0 80px;
+    }
+    .contact-card {
+      background: linear-gradient(135deg, #4361ee 0%, #7c3aed 100%);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .contact-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .contact-card p {
+      font-size: 0.93rem;
+      opacity: 0.85;
+      margin-bottom: 32px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.35);
+      transition: all var(--transition);
+    }
+    .contact-link:hover {
+      background: rgba(255,255,255,0.28);
+      transform: translateY(-2px);
+    }
+    .contact-link.line-btn {
+      background: #06C755;
+      border-color: #06C755;
+    }
+    .contact-link.line-btn:hover {
+      background: #05a847;
+    }
+    .price-table {
+      display: inline-grid;
+      grid-template-columns: auto auto;
+      gap: 6px 24px;
+      text-align: left;
+      margin-top: 8px;
+      font-size: 0.82rem;
+    }
+    .price-table .pt-label { opacity: 0.7; }
+    .price-table .pt-val { font-weight: 600; }
+
+    /* ============================================================
+       Footer
+    ============================================================ */
+    .site-footer {
+      background: var(--clr-text);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.8rem;
+    }
+    .site-footer strong { color: #fff; }
+
+    /* ============================================================
+       Empty State
+    ============================================================ */
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 64px 24px;
+      color: var(--clr-muted);
+      font-size: 0.9rem;
+    }
+    .empty-state span { font-size: 2rem; display: block; margin-bottom: 12px; }
+
+    /* ============================================================
+       Responsive
+    ============================================================ */
+    @media (max-width: 680px) {
+      .site-nav { display: none; }
+      .hero { padding: 48px 0 40px; }
+      .about-grid { grid-template-columns: 1fr; gap: 32px; }
+      .contact-card { padding: 36px 24px; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       Scroll fade-in animation
+    ============================================================ */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
 
-<h1>Portfolio</h1>
-<blockquote>
-  業務課題の整理から設計・実装までを一貫して対応<br>
-  Google Apps Script（GAS）を中心とした個人・小規模事業者向け業務効率化システム
-</blockquote>
+  <!-- ============================================================
+       Header
+  ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-logo">Misako.dev</div>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="#portfolio">ポートフォリオ</a></li>
+          <li><a href="#about">開発スタンス</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<h2>📖 このポートフォリオについて</h2>
-<p>実際の業務ヒアリングをもとに、<strong>「導入しやすさ」「運用のしやすさ」</strong>を重視して設計・実装したシステム集です。</p>
-<p>各プロジェクトでは、実装コードだけでなく、<br><strong>「どのような課題を想定し、どのような運用を目指したか」</strong>を重視してまとめています。</p>
-<p>実際の利用シーンや業務フローを想定し、<br><strong>「作って終わり」ではなく、運用しながら育てていくシステム</strong>を目指しています。</p>
+  <!-- ============================================================
+       Hero
+  ============================================================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-eyebrow">Portfolio</div>
+      <h1 class="hero-title">
+        「使われる」を<br>つくる<span>業務効率化</span>
+      </h1>
+      <p class="hero-subtitle">
+        小規模事業者の現場課題を起点に、GAS・Webアプリで実務に根ざした自動化ツールを開発しています。
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">Google Apps Script</span>
+        <span class="hero-badge">JavaScript</span>
+        <span class="hero-badge">React（学習中）</span>
+        <span class="hero-badge">Excel VBA</span>
+        <span class="hero-badge">AI活用開発</span>
+      </div>
+      <div class="hero-cta">
+        <a href="https://lin.ee/LQKST5q" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          📩 LINEで相談する
+        </a>
+        <a href="#portfolio" class="btn btn-secondary">
+          📂 作品を見る
+        </a>
+      </div>
+    </div>
+  </section>
 
-<h2>🎯 開発スタンス</h2>
-<p><strong>「技術で課題を解決し、日々の業務を楽にする」</strong></p>
-<p>技術ありきではなく、<br><strong>「何が一番困っているのか」「どう運用されるのか」</strong>を起点に設計することを大切にしています。</p>
-<p>業務課題のヒアリングから設計・実装までを重視し、<br>個人・小規模事業者向けの業務効率化システムを中心に開発しています。</p>
+  <!-- ============================================================
+       Filter Tabs
+  ============================================================ -->
+  <section class="filter-section" id="portfolio">
+    <div class="container">
+      <p class="filter-label">カテゴリで絞り込む</p>
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">すべて</button>
+        <button class="filter-tab" data-filter="automation">業務自動化</button>
+        <button class="filter-tab" data-filter="web">Web / UI</button>
+        <button class="filter-tab" data-filter="integration">外部連携</button>
+        <button class="filter-tab" data-filter="prototype">試作・検証</button>
+      </div>
+    </div>
+  </section>
 
-<hr>
+  <!-- ============================================================
+       Portfolio Grid
+  ============================================================ -->
+  <section class="portfolio-section">
+    <div class="container">
+      <div class="portfolio-grid" id="portfolioGrid">
 
-<h2>📂 ポートフォリオ一覧</h2>
-<p><strong>※掲載しているシステムは実案件または実運用を想定して設計したものです。</strong></p>
-<blockquote>
-💡 <strong>各システムのタイトルや「詳細ページを見る」から個別ポートフォリオにアクセスできます</strong>
-</blockquote>
+        <!-- =====================================================
+          顧客管理＆請求書発行システム
+          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
+          追加日: 2026年1月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="automation">
+          <div class="card-header">
+            <div class="card-icon">📊</div>
+            <div class="card-title-area">
+              <h3 class="card-title">顧客管理＆請求書発行システム</h3>
+              <span class="card-badge badge-automation">業務自動化</span>
+            </div>
+          </div>
+          <p class="card-description">
+            顧客情報の管理から請求書の自動生成・PDF出力まで一括処理。個人・小規模事業者の経理業務を大幅に削減する統合管理ツールです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>顧客情報・取引履歴をスプレッドシートで一元管理</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>請求書をGASで自動生成・PDFでGoogle Driveに保存</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>作業時間を約70〜80%削減（月次集計・請求業務）</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">Google スプレッドシート</span>
+            <span class="tech-tag">Gmail API</span>
+            <span class="tech-tag">Drive API</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/customer-management-invoice-system-portfolio"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/customer-management-invoice-system-portfolio"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- 1 -->
-<h3>🏢 <a href="https://github.com/usako-ui/customer-management-invoice-system-portfolio" target="_blank">1. 顧客管理＆請求書発行システム（GAS）</a></h3>
-<p>個人・小規模事業者向けに、顧客情報管理から請求書発行・保存までを一元化した業務基盤システム</p>
-<ul>
-  <li>顧客情報と請求書を紐づけて管理、検索性・正確性向上</li>
-  <li>請求書発行やファイル整理の手作業を削減（作業時間70〜80%削減）</li>
-</ul>
-<p><strong>主な機能:</strong> 顧客情報管理・検索・請求書自動作成・PDF化・Gmail下書き自動作成・支払状況管理</p>
-<p><strong>技術スタック:</strong> Google Apps Script, JavaScript, HTML, CSS</p>
-<div class="center">
-  <a href="https://github.com/usako-ui/customer-management-invoice-system-portfolio" target="_blank">📄 詳細ページを見る →</a>
-</div>
+        <!-- =====================================================
+          Googleカレンダー自動日程調整
+          カテゴリ: PORTFOLIO_CATEGORIES.INTEGRATION
+          追加日: 2025年10月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="integration">
+          <div class="card-header">
+            <div class="card-icon">📅</div>
+            <div class="card-title-area">
+              <h3 class="card-title">Googleカレンダー自動日程調整</h3>
+              <span class="card-badge badge-integration">外部連携</span>
+            </div>
+          </div>
+          <p class="card-description">
+            Googleカレンダーの空き時間を自動検出し、候補日程をメールで送付。日程調整の往復連絡をゼロにする自動化ツールです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>カレンダーの空き枠を自動検出して候補日を抽出</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>GmailでHTML形式の日程候補メールを自動送信</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>日程調整にかかる往復連絡を大幅に削減</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">Calendar API</span>
+            <span class="tech-tag">Gmail API</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/GAS-google-calendar-auto-reservation"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/GAS-google-calendar-auto-reservation"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- 2 -->
-<h3>📅 <a href="https://github.com/usako-ui/GAS-google-calendar-auto-reservation" target="_blank">2. Googleカレンダー自動日程調整（GAS）</a></h3>
-<p>個人事業主の実運用をヒアリングし、日程調整の往復連絡を不要にした予約自動化システム</p>
-<ul>
-  <li>日程調整の往復連絡を削減</li>
-  <li>手動調整・やり取りの手間を削減</li>
-</ul>
-<p><strong>主な機能:</strong> Googleカレンダーと連携した予約管理・通知・排他制御</p>
-<p><strong>技術スタック:</strong> Google Apps Script, Google Calendar API</p>
-<div class="center">
-  <a href="https://github.com/usako-ui/GAS-google-calendar-auto-reservation" target="_blank">📄 詳細ページを見る →</a>
-</div>
+        <!-- =====================================================
+          くらしログ
+          カテゴリ: PORTFOLIO_CATEGORIES.WEB
+          追加日: 2026年1月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="web">
+          <div class="card-header">
+            <div class="card-icon">🏠</div>
+            <div class="card-title-area">
+              <h3 class="card-title">くらしログ</h3>
+              <span class="card-badge badge-web">Web / UI</span>
+            </div>
+          </div>
+          <p class="card-description">
+            30〜40代女性向けの家計・生活記録アプリ。Chart.jsでデータを可視化し、続けたくなるUIデザインにこだわった家計管理ツールです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>収支・カテゴリ別の支出をグラフで直感的に可視化</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>スマートフォンでも使いやすいレスポンシブUI設計</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>30〜40代女性の生活リズムに合わせた入力フロー</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">Chart.js</span>
+            <span class="tech-tag">HTML/CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/kurashi-log-portfolio"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/kurashi-log-portfolio"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- 3 -->
-<h3>🏠 <a href="https://github.com/usako-ui/kurashi-log-portfolio" target="_blank">3. くらしログ（GAS）</a></h3>
-<p>日常の記録を無理なく継続できるよう設計した、個人向けの生活ログ管理システム</p>
-<ul>
-  <li>家庭内の支出・在庫・生活メモを一元管理</li>
-  <li>入力負荷を抑え、振り返りや改善につなげる設計</li>
-  <li>継続しやすいシンプルなUI</li>
-</ul>
-<p><strong>主な機能:</strong> 支出記録・在庫管理・買い物リスト・生活メモ・月次・年次レポート</p>
-<p><strong>技術スタック:</strong> Google Apps Script, Google Spreadsheet, Chart.js</p>
-<div class="center">
-  <a href="https://github.com/usako-ui/kurashi-log-portfolio" target="_blank">📄 詳細ページを見る →</a>
-</div>
+        <!-- =====================================================
+          小規模飲食店向け在庫管理システム
+          カテゴリ: PORTFOLIO_CATEGORIES.WEB
+          追加日: 2026年1月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="web">
+          <div class="card-header">
+            <div class="card-icon">🍽️</div>
+            <div class="card-title-area">
+              <h3 class="card-title">小規模飲食店向け在庫管理システム</h3>
+              <span class="card-badge badge-web">Web / UI</span>
+            </div>
+          </div>
+          <p class="card-description">
+            React + Supabaseで構築した飲食店向けのリアルタイム在庫管理システム。現場の実務フローを徹底分析した使いやすい設計が特徴です。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>リアルタイムで在庫数を更新・複数端末から同時閲覧可能</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>発注アラート・在庫履歴で「気づいたら欠品」を防止</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>飲食店の実務フローに合わせたシンプルな操作設計</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">PostgreSQL</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/inventory-management-portfolio"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/inventory-management-portfolio"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- 4 -->
-<h3>🍔 <a href="https://github.com/usako-ui/inventory-management-portfolio" target="_blank">4. 小規模飲食店向け 在庫管理システム（React + Supabase）</a></h3>
-<p>現場の業務フローを想定しながら、在庫・仕入・売上・廃棄を一元管理するシステム</p>
-<ul>
-  <li>小規模飲食店向けに在庫・仕入・売上・廃棄を効率的に管理</li>
-  <li>現場で使いやすい操作性</li>
-</ul>
-<p><strong>主な機能:</strong> 食材在庫管理・仕入履歴管理・売上・廃棄記録・在庫アラート</p>
-<p><strong>技術スタック:</strong> React, TypeScript, Supabase, Tailwind CSS</p>
-<div class="center">
-  <a href="https://github.com/usako-ui/inventory-management-portfolio" target="_blank">📄 詳細ページを見る →</a>
-</div>
+        <!-- =====================================================
+          英単語テスト自動作成ツール
+          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
+          追加日: 2026年3月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="automation">
+          <div class="card-header">
+            <div class="card-icon">📚</div>
+            <div class="card-title-area">
+              <h3 class="card-title">英単語テスト自動作成ツール</h3>
+              <span class="card-badge badge-automation">業務自動化</span>
+            </div>
+          </div>
+          <p class="card-description">
+            学習塾の先生向けに、単語リストからテストを自動生成するExcel VBAツール。テスト作成時間を約90%削減します。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>単語リストを貼るだけで問題・答案用紙を自動生成</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>出題順のランダム化・難易度別の問題数設定に対応</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>テスト作成時間を30分→3分（約90%）削減</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Excel VBA</span>
+            <span class="tech-tag">Microsoft Excel</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/portfolio"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/portfolio"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<!-- 5 -->
-<h3>📚 <a href="https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio" target="_blank">5. 英単語テスト自動作成ツール（Excel VBA）</a></h3>
-<p>英語塾の単語テスト作成業務を効率化するために開発した、Excelベースの自動テスト生成ツール</p>
-<ul>
-  <li>単語リストからテスト問題を自動生成</li>
-  <li>問題用紙と解答用紙を自動作成</li>
-  <li>手作業での問題作成時間を大幅削減</li>
-</ul>
-<p><strong>主な機能:</strong> 英単語リスト読込・テスト問題自動生成・解答用紙生成</p>
-<p><strong>技術スタック:</strong> Excel VBA</p>
-<div class="center">
-  <a href="https://github.com/usako-ui/VBA_english-vocabulary-test-generat-portfolio" target="_blank">📄 詳細ページを見る →</a>
-</div>
-<!-- 新しい作品を追加する場合はここにliを追加 -->  
-<hr>
+        <!-- =====================================================
+          ネイルサロン統合管理ツール（GAS × スプレッドシート）
+          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
+          追加日: 2026年3月
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="automation">
+          <div class="card-header">
+            <div class="card-icon">💅</div>
+            <div class="card-title-area">
+              <h3 class="card-title">ネイルサロン統合管理ツール</h3>
+              <span class="card-badge badge-automation">業務自動化</span>
+            </div>
+          </div>
+          <p class="card-description">
+            SALON BOARDのCSVを貼り付けるだけで、スタッフ別実績・在庫・顧客データを自動集計する統合管理ツールです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>スタッフ別実績（指名・自顧客・顧初）をCSV貼り付けで自動集計</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>フリガナ＋電話下4桁で顧客IDなしでもリピート率を正確に追跡</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>在庫ログから現在庫を自動計算し、発注アラートを自動表示</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">Google スプレッドシート</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">SALON BOARD CSV連携</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/usako-ui/nail-salon-management-portfolio"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://github.com/usako-ui/nail-salon-management-portfolio"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
 
-<h2>👤 開発者について</h2>
-<h3>💼 バックグラウンド</h3>
-<p><strong>前職：金融機関勤務</strong></p>
-<ul>
-  <li>顧客管理システムを日常的に利用</li>
-  <li>データの正確性・セキュリティ意識を重視</li>
-  <li>エンドユーザー視点での使いやすさを理解</li>
-</ul>
-<p><strong>現在：個人事業主 × AIエンジニア学習・実務中</strong></p>
-<ul>
-  <li>Google Apps Script（GAS）を中心に業務自動化を実装</li>
-  <li>小規模事業者の実運用に寄り添ったシステム設計を得意</li>
-  <li>AIツールを活用した効率的な開発スタイル</li>
-</ul>
+        <!-- empty state（フィルターで全部消えた時） -->
+        <div class="empty-state" id="emptyState" style="display:none;">
+          <span>🔍</span>
+          該当するポートフォリオが見つかりません
+        </div>
 
-<h3>🛠 技術・対応領域</h3>
-<ul>
-  <li>Google Apps Script（GAS）</li>
-  <li>JavaScript</li>
-  <li>HTML/CSS</li>
-  <li>React / Supabase（学習中）</li>
-</ul>
+      </div><!-- /.portfolio-grid -->
+    </div>
+  </section>
 
-<h3>💡 こんなご相談に対応できます</h3>
-<ul>
-  <li>業務効率化の相談・課題整理</li>
-  <li>スプレッドシート管理の改善提案</li>
-  <li>Google Workspaceを活用した自動化システム構築</li>
-  <li>段階的な開発・小さく始める改善</li>
-  <li>初めての外注やシステム開発サポート</li>
-</ul>
+  <!-- ============================================================
+       About / 開発スタンス
+  ============================================================ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">🎯 開発スタンス</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            前職は金融機関で顧客管理システムを日々利用していました。
+            「なぜこんなに手作業が多いのか」という現場の違和感が、業務効率化への関心の出発点です。
+          </p>
+          <p>
+            現在は個人事業主として活動しながら、GASを中心にAIツールを活用した開発を実践中。
+            技術よりも「使われるかどうか」を最優先に、小規模事業者の気持ちを理解した設計を心がけています。
+          </p>
+          <p>
+            「こんなこと相談していいのかな？」という段階からのご連絡を歓迎します。
+            課題の整理から一緒に始められます。
+          </p>
+        </div>
+        <div class="about-principles">
+          <div class="principle-item">
+            <div class="principle-num">01</div>
+            <div class="principle-body">
+              <strong>課題解決ファースト</strong>
+              <span>技術ありきではなく、現場の課題から考える</span>
+            </div>
+          </div>
+          <div class="principle-item">
+            <div class="principle-num">02</div>
+            <div class="principle-body">
+              <strong>実用性重視</strong>
+              <span>「完璧」より「使われる」システムをつくる</span>
+            </div>
+          </div>
+          <div class="principle-item">
+            <div class="principle-num">03</div>
+            <div class="principle-body">
+              <strong>AI活用</strong>
+              <span>AIと協力して効率的・継続的に開発する</span>
+            </div>
+          </div>
+          <div class="principle-item">
+            <div class="principle-num">04</div>
+            <div class="principle-body">
+              <strong>継続的改善</strong>
+              <span>「作って終わり」ではなく、育てていく</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2>📞 ご相談・お問い合わせ</h2>
-<h3>公式LINE（推奨）</h3>
-<p><a href="https://lin.ee/LQKST5q" target="_blank">👉 公式LINEで問い合わせる</a></p>
+  <!-- ============================================================
+       Contact
+  ============================================================ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2>お気軽にご相談ください</h2>
+        <p>
+          「こんなこと自動化できる？」「どこから始めればいい？」<br>
+          そんな段階からでも大歓迎です。
+        </p>
+        <div class="contact-links">
+          <a href="https://lin.ee/LQKST5q" class="contact-link line-btn" target="_blank" rel="noopener noreferrer">
+            📩 公式LINEで相談する（推奨）
+          </a>
+          <a href="https://www.lancers.jp/profile/Mi1103" class="contact-link" target="_blank" rel="noopener noreferrer">
+            ランサーズ
+          </a>
+          <a href="https://crowdworks.jp/public/employees/6463085" class="contact-link" target="_blank" rel="noopener noreferrer">
+            クラウドワークス
+          </a>
+          <a href="https://coconala.com/users/5336527" class="contact-link" target="_blank" rel="noopener noreferrer">
+            ココナラ
+          </a>
+        </div>
+        <div class="price-table">
+          <span class="pt-label">スポット相談・小規模ツール</span>
+          <span class="pt-val">〜3万円〜</span>
+          <span class="pt-label">業務自動化ツール開発</span>
+          <span class="pt-val">3万〜10万円〜</span>
+          <span class="pt-label">統合管理システム構築</span>
+          <span class="pt-val">8万〜15万円〜</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h3>クラウドソーシングサイト</h3>
-<ul>
-  <li><a href="https://www.lancers.jp/profile/Mi1103" target="_blank">ランサーズ</a></li>
-  <li><a href="https://crowdworks.jp/public/employees/6463085?ref=share_url_wkprofile" target="_blank">クラウドワークス</a></li>
-  <li><a href="https://coconala.com/users/5336527" target="_blank">ココナラ</a></li>
-</ul>
+  <!-- ============================================================
+       Footer
+  ============================================================ -->
+  <footer class="site-footer">
+    <p><strong>Misako</strong> &nbsp;|&nbsp; GAS・業務自動化・Webアプリ開発 &nbsp;|&nbsp; 最終更新：2026年4月</p>
+  </footer>
 
-<h2>💰 料金の目安</h2>
-<table>
-  <tr><th>案件規模</th><th>参考価格</th><th>期間</th><th>内容例</th></tr>
-  <tr><td>小規模自動化</td><td>¥30,000〜¥50,000</td><td>3日〜1週間</td><td>スプレッドシート自動化、Gmail自動送信など</td></tr>
-  <tr><td>システム導入支援</td><td>¥80,000〜¥150,000</td><td>1〜2週間</td><td>ポートフォリオシステムの導入・カスタマイズ</td></tr>
-  <tr><td>カスタム開発</td><td>¥150,000〜</td><td>2週間〜</td><td>オリジナルシステム開発</td></tr>
-  <tr><td>保守・サポート</td><td>月額¥10,000〜</td><td>継続</td><td>運用サポート、改善対応</td></tr>
-</table>
+  <!-- ============================================================
+       JavaScript
+  ============================================================ -->
+  <script>
+    // ---- カテゴリフィルター ----
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.portfolio-card[data-category]');
+    const emptyState = document.getElementById('emptyState');
 
-<h2>⏰ 対応時間</h2>
-<p>平日：9:00〜15:00 / 土日祝：応相談<br>レスポンス：24時間以内を目指します</p>
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
 
-<h2>🚀 最後に</h2>
-<p><strong>「完璧なシステム」より「使われるシステム」を目指して</strong></p>
-<p>本当に必要な機能だけを、使いやすい形で提供する。<br>毎日繰り返している作業、手間がかかる定型業務、なんとなく非効率だと感じている作業、それ、自動化できるかもしれません。</p>
-<p>まずは公式LINEで気軽にご相談ください。<br>
-<a href="https://lin.ee/LQKST5q" target="_blank">👉 公式LINEで問い合わせる</a></p>
+        const filter = tab.dataset.filter;
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('hidden', !match);
+          if (match) visibleCount++;
+        });
+
+        emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+      });
+    });
+
+    // ---- スクロールでフェードイン ----
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 
 </body>
 </html>
