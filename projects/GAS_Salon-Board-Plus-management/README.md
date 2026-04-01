@@ -2,16 +2,17 @@
 
 <div align="center">
 
-**「サロンボードだけでは足りない、その先の管理」を自動化する**
+<p><strong>「サロンボードだけでは足りない、その先の管理」を自動化する</strong></p>
 
-![GAS](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<p>
+  <img src="https://img.shields.io/badge/Google_Apps_Script-4285F4?style=for-the-badge&logo=google&logoColor=white">
+  <img src="https://img.shields.io/badge/Google_Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+</p>
 
-**在庫管理・スタッフ実績集計・顧客統合を、CSVを貼るだけで完結**
+<p><strong>在庫管理・スタッフ実績集計・顧客統合を、CSVを貼るだけで完結</strong></p>
 
-> ⚠️ **注意**: このリポジトリはポートフォリオ用です。ソースコードは非公開です。
-> README・画面イメージのみ閲覧可能です。導入・カスタマイズのご相談はお問い合わせください。
+<p>⚠️ このリポジトリはポートフォリオ用です。ソースコードは非公開です。</p>
 
 </div>
 
