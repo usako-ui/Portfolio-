@@ -132,11 +132,11 @@
 
 ---
 
-### 🍔 [4. 小規模飲食店向け 在庫管理システム（React + Supabase）](https://github.com/usako-ui/inventory-management-portfolio)
+### 🍔 [4. 小規模飲食店向け 在庫管理システム（React + Supabase）](https://usako-ui.github.io/Portfolio-/projects/飲食店向け在庫管理システム/)
 
 <div align="center">
 
-**[👉 詳細ページを見る](https://github.com/usako-ui/inventory-management-portfolio)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/飲食店向け在庫管理システム/)**
 
 </div>
 
@@ -158,7 +158,7 @@
 
 <div align="center">
 
-**[📄 詳細なREADME・画面設計・運用フローを見る →](https://github.com/usako-ui/inventory-management-portfolio)**
+**[📄 詳細なREADME・画面設計・運用フローを見る →](https://usako-ui.github.io/Portfolio-/projects/飲食店向け在庫管理システム/)**
 
 </div>
 
