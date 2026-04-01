@@ -100,7 +100,7 @@
 
 ---
 
-### 🏠 [3. くらしログ（GAS）](https://github.com/usako-ui/kurashi-log-portfolio)
+### 🏠 [3. くらしログ（GAS）](https://usako-ui.github.io/Portfolio-/projects/GAS_くらしログ/)
 
 <div align="center">
 
