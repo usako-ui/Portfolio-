@@ -36,11 +36,11 @@
 
 ---
 
-### 🏢 [1. 顧客管理＆請求書発行システム（GAS）](https://github.com/usako-ui/customer-management-invoice-system-portfolio)
+### 🏢 [1. 顧客管理＆請求書発行システム（GAS）](https://usako-ui.github.io/Portfolio-/projects/GAS_顧客管理・請求書発行システム/)
 
 <div align="center">
 
-**[👉 詳細ページを見る](https://github.com/usako-ui/customer-management-invoice-system-portfolio)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/GAS_顧客管理・請求書発行システム/)**
 
 </div>
 
@@ -62,7 +62,7 @@
 
 <div align="center">
 
-**[📄 詳細なREADME・画面構成・運用イメージを見る →](https://github.com/usako-ui/customer-management-invoice-system-portfolio)**
+**[📄 詳細なREADME・画面構成・運用イメージを見る →](https://usako-ui.github.io/Portfolio-/projects/GAS_顧客管理・請求書発行システム/)**
 
 </div>
 
