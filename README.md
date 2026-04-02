@@ -232,7 +232,39 @@
 </div>
  
 ---
+### 🏥 [7. 福祉施設向け予約・管理システム](https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/)
 
+<div align="center">
+
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/)**
+
+</div>
+
+> 福祉施設の予約申込から承認・定員管理・来所打刻・送迎計画管理までをワンストップで実現するWebシステム。
+
+**課題解決のポイント**
+- 電話・紙による予約管理を完全デジタル化し、受付工数を大幅削減
+- PostgreSQLトリガーで定員超過を物理的に防止し、二重登録ゼロを実現
+- Supabase Realtimeで来所打刻をリアルタイム反映し、スタッフ間の情報共有を即時化
+
+**主な機能**
+- 予約申込・多段階承認フロー（承認待ち → 調整連絡 → 確定）
+- 管理ダッシュボード（定員状況・KPI・打刻ログ・アラート）
+- 来所・退所打刻（Realtime連携）
+- 送迎計画の登録・管理
+- 個別連絡・一斉メッセージ配信
+- 予約一覧・連絡履歴のA4印刷出力
+
+**技術スタック**
+`React 18` `TypeScript` `Supabase` `PostgreSQL` `RLS` `Realtime` `Tailwind CSS` `Vite`
+
+<div align="center">
+
+**[📄 詳細なREADME・画面構成を見る →](https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/)**
+
+</div>
+
+---
 ## 👤 開発者について
 
 ### 💼 バックグラウンド
