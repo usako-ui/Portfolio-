@@ -68,11 +68,11 @@
 
 ---
 
-### 📅 [2. Googleカレンダー自動日程調整（GAS）](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)
+### 📅 [2. Googleカレンダー自動日程調整（GAS）](https://usako-ui.github.io/Portfolio-/projects/GAS_Googleカレンダー自動日程調整システム/)
 
 <div align="center">
 
-**[👉 詳細ページを見る](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)**
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/GAS_Googleカレンダー自動日程調整システム/)**
 
 </div>
 
@@ -94,7 +94,7 @@
 
 <div align="center">
 
-**[📄 詳細なREADME・画面設計・システム構成を見る →](https://github.com/usako-ui/GAS-google-calendar-auto-reservation)**
+**[📄 詳細なREADME・画面設計・システム構成を見る →](https://usako-ui.github.io/Portfolio-/projects/GAS_Googleカレンダー自動日程調整システム/)**
 
 </div>
 
