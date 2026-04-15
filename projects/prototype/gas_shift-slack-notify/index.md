@@ -42,6 +42,7 @@
 </p>
 
 <h2>スクリーンショット</h2>
+<p>※実際の動作画面イメージ</p>
 <img src="./images/workflow.png" width="100%" alt="業務フロー">
 <img src="./images/web_form.png" width="100%" alt="Web入力画面">
 <img src="./images/slack_output.png" width="100%" alt="Slack通知">
