@@ -650,8 +650,6 @@
 
         <!-- =====================================================
           顧客管理＆請求書発行システム
-          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
-          追加日: 2026年1月
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="automation">
           <div class="card-header">
@@ -700,8 +698,6 @@
 
         <!-- =====================================================
           Googleカレンダー自動日程調整
-          カテゴリ: PORTFOLIO_CATEGORIES.INTEGRATION
-          追加日: 2025年10月
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="integration">
           <div class="card-header">
@@ -749,8 +745,6 @@
 
         <!-- =====================================================
           くらしログ
-          カテゴリ: PORTFOLIO_CATEGORIES.WEB
-          追加日: 2026年1月
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="web">
           <div class="card-header">
@@ -799,8 +793,6 @@
 
         <!-- =====================================================
           小規模飲食店向け在庫管理システム
-          カテゴリ: PORTFOLIO_CATEGORIES.WEB
-          追加日: 2026年1月
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="web">
           <div class="card-header">
@@ -849,8 +841,6 @@
 
         <!-- =====================================================
           英単語テスト自動作成ツール
-          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
-          追加日: 2026年3月
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="automation">
           <div class="card-header">
@@ -896,9 +886,7 @@
         </div>
 
         <!-- =====================================================
-          ネイルサロン統合管理ツール（GAS × スプレッドシート）
-          カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
-          追加日: 2026年3月
+          ネイルサロン統合管理ツール
         ====================================================== -->
         <div class="portfolio-card fade-in" data-category="prototype">
           <div class="card-header">
@@ -945,6 +933,104 @@
           </div>
         </div>
 
+        <!-- =====================================================
+          福祉施設向け予約・管理システム  ← グリッド内に移動
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="prototype">
+          <div class="card-header">
+            <div class="card-icon">🏥</div>
+            <div class="card-title-area">
+              <h3 class="card-title">福祉施設向け予約・管理システム</h3>
+              <span class="card-badge badge-prototype">試作検証</span>
+            </div>
+          </div>
+          <p class="card-description">
+            福祉施設の予約受付から承認・定員管理・来所打刻・送迎計画までをワンストップで管理。DBトリガーで定員超過を物理的に防止するWebシステムです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>電話・紙の予約管理をデジタル化し、受付工数を大幅削減</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>PostgreSQLトリガーで定員超過を自動防止・二重登録ゼロを実現</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>Supabase Realtimeで来所打刻をリアルタイム反映・スタッフ間共有</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">React 18</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Vite</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- =====================================================
+          GAS 売上管理自動化システム  ← グリッド内に移動
+        ====================================================== -->
+        <div class="portfolio-card fade-in" data-category="automation">
+          <div class="card-header">
+            <div class="card-icon">📈</div>
+            <div class="card-title-area">
+              <h3 class="card-title">GAS 売上管理自動化システム</h3>
+              <span class="card-badge badge-automation">業務自動化</span>
+            </div>
+          </div>
+          <p class="card-description">
+            個人・小規模事業者向けに、売上入力〜日次・月次集計〜未入金アラートまでをGASで一括自動化。GAS WebアプリのダッシュボードUIも実装した統合管理ツールです。
+          </p>
+          <div class="card-points">
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>日次・月次集計をタイムトリガーで完全自動化（集計工数ほぼゼロ）</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>入金期日超過の未入金案件を毎日自動検出してGmailでアラート送信</span>
+            </div>
+            <div class="point-item">
+              <span class="point-icon">✅</span>
+              <span>GAS WebアプリでPC・スマホから売上入力・グラフ確認・設定変更が可能</span>
+            </div>
+          </div>
+          <div class="card-tech">
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">Google スプレッドシート</span>
+            <span class="tech-tag">Gmail API</span>
+            <span class="tech-tag">Chart.js</span>
+          </div>
+          <div class="card-footer">
+            <a href="https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/"
+               class="card-link card-link-primary"
+               target="_blank" rel="noopener noreferrer">
+              📄 詳細を見る
+            </a>
+            <a href="https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/"
+               class="card-link card-link-secondary"
+               target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
         <!-- empty state（フィルターで全部消えた時） -->
         <div class="empty-state" id="emptyState" style="display:none;">
           <span>🔍</span>
@@ -955,115 +1041,6 @@
     </div>
   </section>
 
-  <!-- =====================================================
-  福祉施設向け予約・管理システム
-  カテゴリ: PORTFOLIO_CATEGORIES.PROTOTYPE
-  追加日: 2026年04月
-===================================================== -->
-<div class="portfolio-card fade-in" data-category="prototype">
-  <div class="card-header">
-    <div class="card-icon">🏥</div>
-    <div class="card-title-area">
-      <h3 class="card-title">福祉施設向け予約・管理システム</h3>
-      <span class="card-badge badge-prototype">試作検証</span>
-    </div>
-  </div>
-
-  <p class="card-description">
-    福祉施設の予約受付から承認・定員管理・来所打刻・送迎計画までをワンストップで管理。DBトリガーで定員超過を物理的に防止するWebシステムです。
-  </p>
-
-  <div class="card-points">
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>電話・紙の予約管理をデジタル化し、受付工数を大幅削減</span>
-    </div>
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>PostgreSQLトリガーで定員超過を自動防止・二重登録ゼロを実現</span>
-    </div>
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>Supabase Realtimeで来所打刻をリアルタイム反映・スタッフ間共有</span>
-    </div>
-  </div>
-
-  <div class="card-tech">
-    <span class="tech-tag">React 18</span>
-    <span class="tech-tag">TypeScript</span>
-    <span class="tech-tag">Supabase</span>
-    <span class="tech-tag">PostgreSQL</span>
-    <span class="tech-tag">Tailwind CSS</span>
-    <span class="tech-tag">Vite</span>
-  </div>
-
-  <div class="card-footer">
-    <a href="https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/"
-       class="card-link card-link-primary"
-       target="_blank" rel="noopener noreferrer">
-      📄 詳細を見る
-    </a>
-    <a href="https://usako-ui.github.io/Portfolio-/projects/welfare-reservation-system/"
-       class="card-link card-link-secondary"
-       target="_blank" rel="noopener noreferrer">
-      GitHub
-    </a>
-  </div>
-</div>
-
-<!-- =====================================================
-  GAS 売上管理自動化システム
-  カテゴリ: PORTFOLIO_CATEGORIES.AUTOMATION
-  追加日: 2026年5月
-===================================================== -->
-<div class="portfolio-card fade-in" data-category="automation">
-  <div class="card-header">
-    <div class="card-icon">📈</div>
-    <div class="card-title-area">
-      <h3 class="card-title">GAS 売上管理自動化システム</h3>
-      <span class="card-badge badge-automation">業務自動化</span>
-    </div>
-  </div>
-
-  <p class="card-description">
-    個人・小規模事業者向けに、売上入力〜日次・月次集計〜未入金アラートまでをGASで一括自動化。GAS WebアプリのダッシュボードUIも実装した統合管理ツールです。
-  </p>
-
-  <div class="card-points">
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>日次・月次集計をタイムトリガーで完全自動化（集計工数ほぼゼロ）</span>
-    </div>
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>入金期日超過の未入金案件を毎日自動検出してGmailでアラート送信</span>
-    </div>
-    <div class="point-item">
-      <span class="point-icon">✅</span>
-      <span>GAS WebアプリでPC・スマホから売上入力・グラフ確認・設定変更が可能</span>
-    </div>
-  </div>
-
-  <div class="card-tech">
-    <span class="tech-tag">Google Apps Script</span>
-    <span class="tech-tag">Google スプレッドシート</span>
-    <span class="tech-tag">Gmail API</span>
-    <span class="tech-tag">Chart.js</span>
-  </div>
-
-  <div class="card-footer">
-    <a href="https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/"
-       class="card-link card-link-primary"
-       target="_blank" rel="noopener noreferrer">
-      📄 詳細を見る
-    </a>
-    <a href="https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/"
-       class="card-link card-link-secondary"
-       target="_blank" rel="noopener noreferrer">
-      GitHub
-    </a>
-  </div>
-</div>  
   <!-- ============================================================
        About / 開発スタンス
   ============================================================ -->
