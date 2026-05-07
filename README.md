@@ -265,6 +265,35 @@
 </div>
 
 ---
+### 🏢 [8. GAS 売上管理自動化システム](https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/)
+
+<div align="center">
+
+**[👉 詳細ページを見る](https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/)**
+
+</div>
+
+> 売上入力〜日次・月次集計〜未入金アラート通知まで、スプレッドシートの手作業をGASで一括自動化した統合管理ツール。GAS Webアプリとして専用ダッシュボードUIも実装。
+
+**課題解決のポイント**
+- 毎日・毎月の売上集計をタイムトリガーで完全自動化（工数ほぼゼロに）
+- 入金期日超過の未入金案件を毎日自動検出してGmailでアラート
+- コードを触らずシートとWebUIから設定変更できるノーコード運用設計
+
+**主な機能**
+- 識別ID自動採番・プルダウン自動設定（onEditトリガー）
+- 日次・月次集計の自動実行とGmail自動送信（5パターン）
+- GAS Webアプリ：ダッシュボード・売上入力・グラフ表示・設定の6画面
+
+**技術スタック**
+`Google Apps Script` `Google スプレッドシート` `Gmail API` `HTML/CSS/JS` `Chart.js`
+
+<div align="center">
+
+**[📄 詳細なREADME・画面構成を見る →](https://usako-ui.github.io/Portfolio-/projects/GAS_売上管理自動化システム/)**
+
+</div>
+---
 ## 👤 開発者について
 
 ### 💼 バックグラウンド
